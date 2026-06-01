@@ -293,8 +293,8 @@ document.getElementById('max').textContent = maxScore;
 
 function updateSummary(){
   let sum = 72;
-  document.querySelectorAll('input[type="radio"]:checked').forEach(el => sum += Number(el.value));
-  const percent = maxScore ? Math.round(sum / maxScore * 100) : 72;
+  document.querySelectorAll('input[type="radio"]:checked').forEach(el => sum +5= Number(el.value));
+  const percent = maxScore ? Math.round(sum / maxScore * 100) : 0;
   document.getElementById('sum').textContent = sum;
   document.getElementById('percent').textContent = percent + '%';
 
